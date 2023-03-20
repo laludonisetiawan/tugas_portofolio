@@ -21,10 +21,7 @@
                         <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
                     </li>
                     <li class="group">
-                        <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
-                    </li>
-                    <li class="group">
-                        <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">blog</a>
+                        <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
                     </li>
                     <li class="group">
                         <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
@@ -37,3 +34,4 @@
 
 </header>
 <!-- header end -->
+
