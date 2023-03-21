@@ -8,21 +8,26 @@
   @include('template.partials.navbar')
    <!-- hero section start -->
    <section id="home" class="pt-36">
+    <span class="bg">
+        <img src="{{('img/bg.png')}}" alt="art">
+    </span>
     <div class="container">
+        
         <div class="flex flex-wrap">
             <div class="w-full self-center px-4 lg:w-1/2">
-                <h1 class="text-base font-semibold text-primary md:text-xl ">Hallo 👋 saya <span
+                <h1 class="text-base font-semibold text-teal-700 md:text-xl ">Hallo 👋 saya <span
                         class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Lalu Doni Setiawan</span></h1>
                 <h2 class="font-medium text-secondary text-lg mb-5">Web developer</h2>
                 <p class="font-medium text-secondary mb-10 leading-relaxed">Mahasiswa universitas bumigora mataram
                 </p>
                 <a href="#"
-                    class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi
+                    class="text-base font-semibold text-white bg-teal-700 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi
                     Saya</a>
             </div>
             <div class="w-full self-end px-4 lg:w-1/2">
-                <div class="relative mt-10 lg:mt-9 lg:right-0">
+                <div class="relative mt-10 lg:mt-1 lg:right-0">
                     <img src="{{ ('img/doni1.png') }}" alt="doni" class="max-w-auto">
+                    
                     
                 </div>
             </div>
@@ -31,16 +36,27 @@
 </section>
 <!-- hero section end -->
 <!-- about section start -->
-<section id="about" class="pt-36 pb-32">
+<section id="artikel" class="pt-36 pb-32">
   <div class="container">
       <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
-              <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Tentang Saya</h3>
-
-              <p class="font-medium text-base text-secondary max-w-xl">Saat ini saya sedang belajar menjadi seorang web developer dan saya sangat senang melakukan problem solving</p>
+              <h3  class="font-semibold text-teal-700 text-2xl mb-4 lg:text-3xl lg:pt-10">Artikel</h3>
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src={{("img/tailwind.png")}} alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2"> <a href="https://www.petanikode.com/tailwind-dasar/">Tutorial Tailwind 1#: Dasar Tailwind CSS untuk Pemula</a> </div>
+                  <p class="text-gray-700 text-base">
+                    Di tutorial ini kamu akan belajar dasar-dasar Tailwind CSS seperti: Apa itu Tailwind? Mengapa sih pakai Tailwind? dan gimana cara pakai Tailwind?
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#tailwindcss</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#petanikode</span>
+                </div>
+              </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-              <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+              <h3 class="font-semibold text-teal-700 text-2xl mb-4 lg:text-3xl lg:pt-10">Sosial Media</h3>
               <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Kunjungi halaman sosial media saya di bawah ini untuk melihat perkembangan saya, jangan lupa di follow.
               </p>
               <div class="flex items-center">
@@ -87,8 +103,16 @@
           </div>
       </div>
   </div>
+  
 </section>
 <!-- about section end  -->
+{{-- karya section--}}
+@include('template.partials.karya')
+{{-- karya section end --}}
+@include('template.partials.form')
+@include('template.partials.footer')
+
+@include('template.partials.script')
 
 </body>
 </html>
