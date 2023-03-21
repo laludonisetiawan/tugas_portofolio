@@ -5,5 +5,7 @@
 
 <p>🌱 Tampilan UI Menggunakan TailwindCss</p>
 <p>🌱 Sederhana dan Minimalis</p> 
+<p>running?</p> 
+<p>jalankan perintah php artisan serve, kemudian buat terminal baru dan jalankan npm run dev</p> 
 
 
